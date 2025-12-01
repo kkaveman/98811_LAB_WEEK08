@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             .getWorkInfoByIdLiveData(secondRequest.id)
             .observe(this) { info ->
                 if (info?.state?.isFinished == true) {
-                    showResult("Second process is done")
+                    showResult("Second process is donee")
                 }
             }
     }
