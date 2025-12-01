@@ -6,14 +6,14 @@ import androidx.work.Worker
 import androidx.work.WorkerParameters
 
 
-class SecondWorker(
+class ThirdWorker(
     context: Context,
     workerParams: WorkerParameters
 ): Worker(context,workerParams) {
 
     override fun doWork(): Result{
         val id = inputData.getString(INPUT_DATA_ID)
-        Thread.sleep(5000L)
+        Thread.sleep(7000L)
         val outputData = Data.Builder()
             .putString(OUTPUT_DATA_ID,id)
             .build()
